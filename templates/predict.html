@@ -1,0 +1,29 @@
+<!-- templates/predict.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Product</title>
+</head>
+<body>
+    <h1>Product Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="salary">Salary:</label><br>
+        <input type="number" id="salary" name="salary" required><br><br>
+
+        <label for="profession">Profession:</label><br>
+        <select id="profession" name="profession" required>
+            <option value="1">Engineer</option>
+            <option value="2">Doctor</option>
+            <option value="3">Lawyer</option>
+            <option value="4">Student</option>
+        </select><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
